@@ -1,0 +1,26 @@
+From d78dd91cde420350be1022fa93d10336d4f12567 Mon Sep 17 00:00:00 2001
+From: BastianZim <10774221+BastianZim@users.noreply.github.com>
+Date: Wed, 29 Sep 2021 21:35:01 +0200
+Subject: [PATCH] Patch-for-downstream
+
+---
+ Osi/osi.pc.in | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/Osi/osi.pc.in b/Osi/osi.pc.in
+index 1b482bf8..e26b49d3 100644
+--- a/Osi/osi.pc.in
++++ b/Osi/osi.pc.in
+@@ -7,6 +7,7 @@ Name: Osi
+ Description: COIN-OR Open Solver Interface
+ URL: https://projects.coin-or.org/Osi
+ Version: @PACKAGE_VERSION@
+-Libs: -L${libdir} -lOsi @OSILIB_PCLIBS@
++Libs: -L${libdir} -lOsi
++Libs.private: @OSILIB_PCLIBS@
+ Cflags: -I${includedir}
+-Requires: @OSILIB_PCREQUIRES@
++Requires.private: @OSILIB_PCREQUIRES@
+-- 
+2.33.0
+
