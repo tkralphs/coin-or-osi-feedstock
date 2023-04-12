@@ -1,5 +1,5 @@
 {% set name = "coin-or-osi" %}
-{% set version = "0.108.7" %}
+{% set version = "0.108.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/coin-or/Osi/archive/releases/{{ version }}.tar.gz
-  sha256: f1bc53a498585f508d3f8d74792440a30a83c8bc934d0c8ecf8cd8bc0e486228
+  sha256: 8b01a49190cb260d4ce95aa7e3948a56c0917b106f138ec0a8544fadca71cf6a
   patches:
     - 0001-Patch-for-downstream.patch
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name, min_pin='x.x', max_pin='x.x') }}
