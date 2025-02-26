@@ -12,10 +12,6 @@ coin_or_utils:
 - '2.11'
 cxx_compiler:
 - vs2019
-libcblas:
-- 3.9 *netlib
-liblapack:
-- 3.9 *netlib
 target_platform:
 - win-64
 zlib:

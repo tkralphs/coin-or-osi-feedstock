@@ -19,7 +19,7 @@ be linked to any solver with an OSI interface and should produce correct
 results. The OSI has been significantly extended compared to its first
 incarnation. Currently, the OSI supports linear programming solvers and has
 rudimentary support for integer programming. Among others the following
-operations are supported
+operations are supported:
 
   - creating the LP formulation;
   - directly modifying the formulation by adding rows/columns;
