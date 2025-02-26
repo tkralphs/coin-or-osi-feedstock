@@ -9,7 +9,7 @@ else
 fi
 
 if [[ "${target_platform}" == win-* ]]; then
-  COINUTLS_LIB=( --with-coinutils-lib='${LIBRARY_PREFIX}/lib/mkl_intel_ilp64.lib ${LIBRARY_PREFIX}/lib/mkl_sequential.lib ${LIBRARY_PREFIX}/lib/mkl_core.lib ${LIBRARY_PREFIX}/lib/libCoinUtils.lib' )
+  COINUTILS_LIB=( --with-coinutils-lib='${LIBRARY_PREFIX}/lib/mkl_intel_ilp64.lib ${LIBRARY_PREFIX}/lib/mkl_sequential.lib ${LIBRARY_PREFIX}/lib/mkl_core.lib ${LIBRARY_PREFIX}/lib/libCoinUtils.lib' )
   COINUTILS_INC=( --with-coinutils-incdir='${LIBRARY_PREFIX_COIN}' )
   EXTRA_FLAGS=( --enable-msvc ) 
 else
